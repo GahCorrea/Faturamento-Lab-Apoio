@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/Index.css">
+    <title>Test</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="envioDB">
+            <!-- <img class="logo" src="./Image/logo.png" alt="Logo"> -->
+            <h1>Envio de Arquivo</h1>
+            <form enctype="multipart/form-data" method="POST" action="checkFile.php">
+                <label for="file" class="button">Arquivo de Envio</label>
+                <input type="file" name="file" id="file"><br><br>
+                <fieldset>
+                    <legend>Apoio</legend>
+                    <input type="radio" name="apoio" id="db" value="db">
+                    <label for="db">DB</label>
+                    <input type="radio" name="apoio" id="alvaro" value="alvaro">
+                    <label for="alvaro">Álvaro</label>
+                    <br><br><label for="ref">Referência</label>
+                    <input type="month" name="ref" id="ref">
+                </fieldset><br><br>
+                <input type="submit" name="sendFile" value="Enviar"><br><br>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
